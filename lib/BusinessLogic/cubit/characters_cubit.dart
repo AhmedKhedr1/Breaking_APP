@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:bloc/bloc.dart';
 import 'package:breaking_app/data/Repository/CharactersRepository.dart';
 import 'package:breaking_app/data/models/Character.dart';
