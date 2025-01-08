@@ -88,17 +88,63 @@ class Characterdetailsview extends StatelessWidget {
                   SizedBox(
                     height: 14,
                   ),
-                  characterinfo('epside : ', character.episode.join('/')),
-                  builddivider(16),
+                  characterinfo('epside : ', character.episode.length.toString()),
+                  builddivider(300),
+                  /*  EpsideInfo(),
                   SizedBox(
-                    height: 14,
-                  )
+                    height: 16,
+                  ),*/
                 ],
               ),
             )
           ])),
         ],
       ),
+    );
+  }
+
+  Row EpsideInfo() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text('Epside : ',
+                style: TextStyle(
+                    color: Appcolors.MyWhaite,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18)),
+          ],
+        ),
+        Column(
+          children: [
+            Container(
+              height: 800,
+              width: 250,
+              child: ListView.builder(
+                physics: NeverScrollableScrollPhysics(),
+                padding: EdgeInsets.zero,
+                itemCount: character.episode.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: EdgeInsets.symmetric(vertical: 4),
+                    child: Text(
+                      character.episode.join('/'),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          color: Appcolors.MyWhaite,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16),
+                    ),
+                  );
+                },
+              ),
+            )
+          ],
+        ),
+      ],
     );
   }
 }
