@@ -1,10 +1,10 @@
-import 'package:breaking_app/BusinessLogic/cubit/characters_cubit.dart';
-import 'package:breaking_app/Constants/Strings.dart';
-import 'package:breaking_app/data/Repository/CharactersRepository.dart';
-import 'package:breaking_app/data/WebServices/CharactersServices.dart';
-import 'package:breaking_app/data/models/Character.dart';
-import 'package:breaking_app/presentation/views/CharacterDetailsView.dart';
-import 'package:breaking_app/presentation/views/CharacterView.dart';
+import 'BusinessLogic/cubit/characters_cubit.dart';
+import 'Constants/Strings.dart';
+import 'data/Repository/CharactersRepository.dart';
+import 'data/WebServices/CharactersServices.dart';
+import 'data/models/Character.dart';
+import 'presentation/views/CharacterDetailsView.dart';
+import 'presentation/views/CharacterView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

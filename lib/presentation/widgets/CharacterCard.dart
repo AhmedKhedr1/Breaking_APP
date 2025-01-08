@@ -1,6 +1,6 @@
-import 'package:breaking_app/Constants/AppColors.dart';
-import 'package:breaking_app/Constants/Strings.dart';
-import 'package:breaking_app/data/models/Character.dart';
+import '../../Constants/AppColors.dart';
+import '../../Constants/Strings.dart';
+import '../../data/models/Character.dart';
 import 'package:flutter/material.dart';
 
 class Charactercard extends StatelessWidget {

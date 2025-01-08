@@ -1,5 +1,5 @@
-import 'package:breaking_app/Constants/AppColors.dart';
-import 'package:breaking_app/data/models/Character.dart';
+import '../../Constants/AppColors.dart';
+import '../../data/models/Character.dart';
 import 'package:flutter/material.dart';
 
 class Characterdetailsview extends StatelessWidget {
@@ -88,12 +88,13 @@ class Characterdetailsview extends StatelessWidget {
                   SizedBox(
                     height: 14,
                   ),
-                  characterinfo('epside : ', character.episode.length.toString()),
-                  builddivider(300),
-                  /*  EpsideInfo(),
+                  characterinfo(
+                      'epsideNumber : ', character.episode.length.toString()),
+                  builddivider(230),
+                  EpsideInfo(),
                   SizedBox(
                     height: 16,
-                  ),*/
+                  ),
                 ],
               ),
             )
@@ -120,7 +121,7 @@ class Characterdetailsview extends StatelessWidget {
         Column(
           children: [
             Container(
-              height: 800,
+              height: 500,
               width: 250,
               child: ListView.builder(
                 physics: NeverScrollableScrollPhysics(),

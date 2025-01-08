@@ -1,5 +1,5 @@
-import 'package:breaking_app/Constants/Strings.dart';
-import 'package:breaking_app/data/models/Character.dart';
+import '../../Constants/Strings.dart';
+import '../models/Character.dart';
 import 'package:dio/dio.dart';
 
 class Charactersservices {

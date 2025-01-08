@@ -1,5 +1,5 @@
-import 'package:breaking_app/App_Router.dart';
-import 'package:breaking_app/data/WebServices/CharactersServices.dart';
+import 'App_Router.dart';
+import 'data/WebServices/CharactersServices.dart';
 import 'package:flutter/material.dart';
 
 void main() {

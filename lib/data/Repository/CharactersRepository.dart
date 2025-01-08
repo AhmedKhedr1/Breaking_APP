@@ -1,5 +1,5 @@
-import 'package:breaking_app/data/WebServices/CharactersServices.dart';
-import 'package:breaking_app/data/models/Character.dart';
+import '../WebServices/CharactersServices.dart';
+import '../models/Character.dart';
 
 class Charactersrepository {
   final Charactersservices charactersservices;
