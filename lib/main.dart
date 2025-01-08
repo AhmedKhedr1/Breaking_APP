@@ -7,7 +7,7 @@ void main() {
 }
 
 class BreakingApp extends StatelessWidget {
-  Charactersservices cha=Charactersservices();
+  Charactersservices cha = Charactersservices();
   BreakingApp({super.key});
   // This widget is the root of your application.
   @override
