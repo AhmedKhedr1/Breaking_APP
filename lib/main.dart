@@ -1,5 +1,4 @@
-import 'App_Router.dart';
-import 'data/WebServices/CharactersServices.dart';
+// ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,15 +6,13 @@ void main() {
 }
 
 class BreakingApp extends StatelessWidget {
-  Charactersservices cha = Charactersservices();
   BreakingApp({super.key});
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    cha.GetCharacter();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      onGenerateRoute: AppRouter().generateRoute,
+      home: Scaffold(),
     );
   }
 }
