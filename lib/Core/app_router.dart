@@ -1,3 +1,4 @@
+import 'package:breaking_app/data/model/character_model.dart';
 import 'package:breaking_app/presentation/views/Character_details_view.dart';
 import 'package:breaking_app/presentation/views/home_view.dart';
 import 'package:go_router/go_router.dart';
@@ -13,7 +14,10 @@ class AppRouter {
     ),
     GoRoute(
       path: KcharacterdetailsView,
-      builder: (context, state) => CharacterDetailsView(),
-    )
+      builder: (context, state) {
+        final character = state.extra as CharacterModel;
+        return CharacterDetailsView(character: character);
+      },
+    ),
   ]);
 }
