@@ -14,6 +14,7 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Appcolors.MyYellow,
         title: Text('Characters'),
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.search))],
       ),
       body: BlocBuilder<CharacterCubit, CharacterState>(
         builder: (context, state) {
